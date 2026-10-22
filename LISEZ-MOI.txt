@@ -1,0 +1,12 @@
+POPOTTE v1 — Gestion de caisse
+
+1. Ouvrez index.html dans Chrome, Edge ou Firefox.
+2. Ajoutez les collègues dans l'onglet « Collègues ».
+3. Saisissez leurs cotisations avec « + Entrée », en choisissant le collègue.
+4. Saisissez les courses avec « − Dépense ».
+5. Exportez régulièrement la sauvegarde JSON depuis l'onglet « Sauvegardes ».
+
+Cette version fonctionne hors ligne et ne nécessite pas de serveur.
+ATTENTION : les données restent dans le navigateur de cet appareil. Ne supprimez pas les données du navigateur sans sauvegarde préalable. Les données ne se synchronisent pas automatiquement entre appareils.
+
+Le solde est calculé depuis toutes les opérations enregistrées. Pour reprendre une caisse déjà existante, enregistrez une entrée « Solde initial » non attribuée à un collègue.
