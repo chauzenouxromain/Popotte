@@ -1,12 +1,8 @@
-POPOTTE v1 — Gestion de caisse
+POPOTTE V2 — Café et boissons
 
-1. Ouvrez index.html dans Chrome, Edge ou Firefox.
-2. Ajoutez les collègues dans l'onglet « Collègues ».
-3. Saisissez leurs cotisations avec « + Entrée », en choisissant le collègue.
-4. Saisissez les courses avec « − Dépense ».
-5. Exportez régulièrement la sauvegarde JSON depuis l'onglet « Sauvegardes ».
-
-Cette version fonctionne hors ligne et ne nécessite pas de serveur.
-ATTENTION : les données restent dans le navigateur de cet appareil. Ne supprimez pas les données du navigateur sans sauvegarde préalable. Les données ne se synchronisent pas automatiquement entre appareils.
-
-Le solde est calculé depuis toutes les opérations enregistrées. Pour reprendre une caisse déjà existante, enregistrez une entrée « Solde initial » non attribuée à un collègue.
+Remplacer uniquement index.html dans le dépôt GitHub popotte.
+Sauvegarder les données JSON avant mise à jour.
+Tarifs : café 5 €/mois par collègue (désactivable), canette 0,70 €.
+Les paiements sont attribués à un mois de cotisation, distinct de la date de versement.
+Les anciennes opérations restent intactes. Les anciennes entrées attribuées à un collègue sont associées au mois de leur date.
+Les données restent propres au navigateur et ne se synchronisent pas entre appareils.
