@@ -1,20 +1,25 @@
-POPOTTE V4 — Gestion de caisse et stocks
+CAISSE CAFÉ DE LA BTM AYDOILLES — V5
 
-1. Dans POPOTTE V3, téléchargez une sauvegarde JSON AVANT la mise à jour.
-2. Remplacez uniquement index.html à la racine du dépôt GitHub Pages.
-3. Rechargez le site. Les données existantes utilisent toujours la clé localStorage popotte_v1.
-4. Testez avec des opérations fictives et vérifiez les soldes.
+Cette version modernise l'apparence de POPOTTE V4 sans modifier son modèle de données ni les calculs de caisse.
 
-NOUVEAUTÉS
-- Stocks : types de boissons, achats de packs (quantité + prix total), prix unitaire calculé, inventaires/ajustements.
-- Chaque achat de pack génère une dépense dans la caisse. Modifier/supprimer un pack modifie/supprime la dépense liée.
-- Stock global = achats + ajustements - coches de consommation. Les coches ne distinguent pas les marques : pas de stock restant exact par marque.
-- Comparaison des consommations facturées (0,70 €) au coût des achats de packs. Ce n'est pas une marge comptable définitive car le stock restant et les impayés comptent.
-- Clôture mensuelle avec contrôle physique préalable, verrouillage des périodes, réouverture de la dernière clôture.
-- Bilan mensuel imprimable depuis le navigateur (Imprimer > Enregistrer en PDF).
+INSTALLATION
+1. Depuis votre version actuelle, téléchargez une sauvegarde JSON.
+2. Décompressez ce ZIP.
+3. Dans votre dépôt GitHub Pages, remplacez uniquement le fichier index.html à la racine.
+4. Attendez la publication puis rechargez la page (Ctrl+Maj+R sur ordinateur).
+5. Vérifiez les soldes, les collègues, les stocks et les bilans avant toute utilisation réelle.
 
-ATTENTION
-- Les stocks déjà présents avant V4 doivent être saisis en ajustement positif (stock initial).
-- Les anciennes dépenses de packs de V3 restent des dépenses normales : ne les ressaisissez pas dans Stocks sans éviter un double comptage.
-- Les données sont locales au navigateur ; sauvegardez régulièrement votre JSON.
-- Aucune modification de Supabase ou Render nécessaire.
+DONNÉES
+- La clé de stockage reste « popotte_v1 » : les données déjà présentes dans le même navigateur et sur la même URL sont conservées.
+- Ne téléversez jamais vos sauvegardes JSON contenant les noms ou les comptes de collègues dans un dépôt public.
+- Les appareils différents ne synchronisent pas automatiquement leurs données.
+
+IDENTITÉ VISUELLE
+- Nom : « Caisse café de la BTM Aydoilles ».
+- Palette bleu marine, blanc, doré et couleurs d'état.
+- Aucun écusson d'unité inventé en haut à droite.
+- Marque typographique Gendarmerie nationale stylisée : ce n'est pas une reproduction certifiée du logo officiel.
+
+LIMITES
+- Syntaxe JavaScript vérifiée.
+- Test complet dans un navigateur réel non disponible dans l'environnement de création ; effectuez des essais avec des données fictives.
