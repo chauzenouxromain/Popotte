@@ -1,8 +1,20 @@
-POPOTTE V3 — Reports automatiques des crédits et impayés.
+POPOTTE V4 — Gestion de caisse et stocks
 
-1. Sauvegardez votre caisse JSON depuis POPOTTE V2.
-2. Remplacez uniquement index.html dans votre dépôt GitHub Pages.
-3. Les données existantes restent sous la même clé locale popotte_v1.
-4. Le report se calcule depuis le mois d’inscription des nouveaux collègues ; pour les collègues déjà présents, depuis leur première activité connue (sinon depuis le mois actuel).
-5. Les anciens mois ne sont pas verrouillés : une correction recalculera les soldes suivants.
-6. Les données restent propres au navigateur/appareil.
+1. Dans POPOTTE V3, téléchargez une sauvegarde JSON AVANT la mise à jour.
+2. Remplacez uniquement index.html à la racine du dépôt GitHub Pages.
+3. Rechargez le site. Les données existantes utilisent toujours la clé localStorage popotte_v1.
+4. Testez avec des opérations fictives et vérifiez les soldes.
+
+NOUVEAUTÉS
+- Stocks : types de boissons, achats de packs (quantité + prix total), prix unitaire calculé, inventaires/ajustements.
+- Chaque achat de pack génère une dépense dans la caisse. Modifier/supprimer un pack modifie/supprime la dépense liée.
+- Stock global = achats + ajustements - coches de consommation. Les coches ne distinguent pas les marques : pas de stock restant exact par marque.
+- Comparaison des consommations facturées (0,70 €) au coût des achats de packs. Ce n'est pas une marge comptable définitive car le stock restant et les impayés comptent.
+- Clôture mensuelle avec contrôle physique préalable, verrouillage des périodes, réouverture de la dernière clôture.
+- Bilan mensuel imprimable depuis le navigateur (Imprimer > Enregistrer en PDF).
+
+ATTENTION
+- Les stocks déjà présents avant V4 doivent être saisis en ajustement positif (stock initial).
+- Les anciennes dépenses de packs de V3 restent des dépenses normales : ne les ressaisissez pas dans Stocks sans éviter un double comptage.
+- Les données sont locales au navigateur ; sauvegardez régulièrement votre JSON.
+- Aucune modification de Supabase ou Render nécessaire.
