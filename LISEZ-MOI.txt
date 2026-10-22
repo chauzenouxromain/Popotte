@@ -1,8 +1,8 @@
-POPOTTE V2 — Café et boissons
+POPOTTE V3 — Reports automatiques des crédits et impayés.
 
-Remplacer uniquement index.html dans le dépôt GitHub popotte.
-Sauvegarder les données JSON avant mise à jour.
-Tarifs : café 5 €/mois par collègue (désactivable), canette 0,70 €.
-Les paiements sont attribués à un mois de cotisation, distinct de la date de versement.
-Les anciennes opérations restent intactes. Les anciennes entrées attribuées à un collègue sont associées au mois de leur date.
-Les données restent propres au navigateur et ne se synchronisent pas entre appareils.
+1. Sauvegardez votre caisse JSON depuis POPOTTE V2.
+2. Remplacez uniquement index.html dans votre dépôt GitHub Pages.
+3. Les données existantes restent sous la même clé locale popotte_v1.
+4. Le report se calcule depuis le mois d’inscription des nouveaux collègues ; pour les collègues déjà présents, depuis leur première activité connue (sinon depuis le mois actuel).
+5. Les anciens mois ne sont pas verrouillés : une correction recalculera les soldes suivants.
+6. Les données restent propres au navigateur/appareil.
