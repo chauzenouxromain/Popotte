@@ -1,25 +1,23 @@
-CAISSE CAFÉ DE LA BTM AYDOILLES — V5
+CAISSE CAFÉ DE LA BTM AYDOILLES — V5.2
 
-Cette version modernise l'apparence de POPOTTE V4 sans modifier son modèle de données ni les calculs de caisse.
+Cette version corrige uniquement l'identité visuelle de la V5.1 :
+- Logo fourni par l'utilisateur, sans redessin (recadrage des marges transparentes).
+- Véritable image de paysage forestier dans l'en-tête.
+- Titre et sous-titre en texte net et responsive.
+- Aucun écusson d'unité en haut à droite.
+- Gestion de caisse inchangée.
 
 INSTALLATION
-1. Depuis votre version actuelle, téléchargez une sauvegarde JSON.
-2. Décompressez ce ZIP.
-3. Dans votre dépôt GitHub Pages, remplacez uniquement le fichier index.html à la racine.
-4. Attendez la publication puis rechargez la page (Ctrl+Maj+R sur ordinateur).
-5. Vérifiez les soldes, les collègues, les stocks et les bilans avant toute utilisation réelle.
+1. Dans l'application actuelle, exporter une sauvegarde JSON.
+2. Décompresser le ZIP.
+3. Envoyer ces TROIS fichiers à la racine du dépôt GitHub Pages :
+   index.html
+   logo-gendarmerie.png
+   paysage-vosges.webp
+4. Attendre le déploiement et recharger la page (Ctrl+Maj+R).
+5. Vérifier l'affichage et les opérations avec des données fictives.
 
-DONNÉES
-- La clé de stockage reste « popotte_v1 » : les données déjà présentes dans le même navigateur et sur la même URL sont conservées.
-- Ne téléversez jamais vos sauvegardes JSON contenant les noms ou les comptes de collègues dans un dépôt public.
-- Les appareils différents ne synchronisent pas automatiquement leurs données.
-
-IDENTITÉ VISUELLE
-- Nom : « Caisse café de la BTM Aydoilles ».
-- Palette bleu marine, blanc, doré et couleurs d'état.
-- Aucun écusson d'unité inventé en haut à droite.
-- Marque typographique Gendarmerie nationale stylisée : ce n'est pas une reproduction certifiée du logo officiel.
-
-LIMITES
-- Syntaxe JavaScript vérifiée.
-- Test complet dans un navigateur réel non disponible dans l'environnement de création ; effectuez des essais avec des données fictives.
+IMPORTANT
+- Ne pas publier de sauvegarde JSON contenant les noms et comptes des collègues sur GitHub.
+- Les données restent dans le stockage local du navigateur.
+- Cette version ne corrige pas les éventuels problèmes de calcul antérieurs.

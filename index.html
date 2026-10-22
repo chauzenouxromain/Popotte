@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Caisse café de la BTM Aydoilles</title><style>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Caisse café de la BTM Aydoilles — V5.2</title><style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#182332;background:#f4f6fa}*{box-sizing:border-box}body{margin:0}header{background:#152238;color:white;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px}header strong{font-size:24px;letter-spacing:.06em}header small{display:block;color:#b7c7dc}main{max-width:1050px;margin:auto;padding:18px}nav{display:flex;gap:8px;overflow:auto;margin-bottom:18px}button,.btn{border:0;background:#dfe7f1;color:#152238;border-radius:10px;padding:11px 15px;font-weight:650;cursor:pointer;font:inherit}button:hover{filter:brightness(.96)}button.active,.primary{background:#245c9e;color:white}.danger{background:#fee5e5;color:#a32222}.ghost{background:transparent;color:inherit;border:1px solid #d7e0ea}section[hidden]{display:none!important}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card,.panel{background:white;border-radius:15px;padding:20px;box-shadow:0 2px 10px #162c4a0a}.card span{color:#68788b;font-size:13px}.card strong{display:block;font-size:27px;margin-top:8px}.green{color:#16704b}.red{color:#b34242}.panel{margin-top:16px}h2{margin:0 0 15px;font-size:20px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between}.actions{display:flex;gap:8px;flex-wrap:wrap}.muted{color:#718094;font-size:13px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;border-bottom:1px solid #e8edf3;padding:11px 8px;white-space:nowrap}th{color:#697b90;font-size:12px;text-transform:uppercase}td:last-child{text-align:right}th:last-child{text-align:right}.empty{padding:25px;text-align:center;color:#78899a}dialog{border:0;border-radius:16px;box-shadow:0 20px 70px #17243a44;width:min(460px,calc(100% - 24px));padding:22px}dialog::backdrop{background:#101b2c99}form{display:grid;gap:12px}label{display:grid;gap:5px;font-size:13px;font-weight:650}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd6e2;border-radius:9px;font:inherit;background:white}textarea{min-height:75px}form .actions{justify-content:flex-end}#message{position:fixed;bottom:15px;right:15px;background:#1a2c42;color:white;padding:12px 17px;border-radius:10px;display:none;max-width:90vw}#message.show{display:block}.note{background:#e8f0fb;border-radius:10px;padding:12px;color:#36506f;font-size:13px;margin-top:15px}@media(max-width:650px){header{padding:14px}main{padding:12px}.cards{grid-template-columns:1fr}.card{padding:14px}.card strong{font-size:23px}button{padding:10px 12px}.panel{padding:14px}th,td{font-size:13px}}
 
 .stat4{grid-template-columns:repeat(4,1fr)}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.notice-warn{background:#fff3d9;color:#805317;padding:12px;border-radius:10px}.notice-good{background:#e4f5eb;color:#16603c;padding:12px;border-radius:10px}.stock-negative{color:#b34242;font-weight:700}.print-only{display:none}.table-wrap td{vertical-align:middle}.table-wrap button{padding:7px 9px}.flex-field{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.flex-field label{min-width:180px;flex:1}.metric{font-weight:750;font-size:20px}.locked{color:#895500;background:#fff2ce;padding:8px;border-radius:8px}
@@ -34,13 +34,45 @@ button.primary,.primary{background:#1265c2;color:white}button:hover{filter:brigh
 @media(max-width:760px){.hero{height:auto;min-height:138px;grid-template-columns:1fr;gap:12px;padding:18px}.brand strong{font-size:18px}.brand small{font-size:10px}.brand-symbol{font-size:26px}.hero-title{gap:12px}.hero-cup{font-size:30px}.hero-title h1{font-size:26px}.hero-title p{font-size:17px}.hero-title small{font-size:9px;letter-spacing:.1em}.app-layout{display:block}.sidebar{display:block}.sidebar-label,.sidebar-foot{display:none}.sidebar nav{display:flex;flex-direction:row;overflow-x:auto;padding:10px;gap:7px}.sidebar nav button{white-space:nowrap;flex-shrink:0;padding:11px 13px}.content{padding:12px!important}.dashboard-bottom{grid-template-columns:1fr}.stat4{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi{min-height:140px}.kpi strong{font-size:22px}.dash-date{display:none}}
 @media(max-width:420px){.stat4{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr 1fr}}
 @media print{.hero,.sidebar,.dash-heading,.quick-grid{display:none!important}.app-layout{display:block}main.content{padding:0!important}.dashboard-grid,.dashboard-bottom{display:none!important}}
+
+/* V5.1 : banner extracted from the approved mockup, included locally. */
+.hero.hero-image{display:block!important;height:auto!important;min-height:0!important;padding:0!important;overflow:hidden;background:#0a2039!important;position:relative;line-height:0}
+.hero.hero-image:after{display:none!important}
+.hero-banner{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+.hero-mobile{display:none}
+.app-layout{min-height:calc(100vh - 11.1vw)}
+.cards.stat4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1050px){.cards.stat4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.hero.hero-image{height:auto!important;min-height:0!important;line-height:normal}.hero-banner{display:none}.hero-mobile{display:flex;flex-direction:column;gap:4px;padding:21px 16px 25px;background:linear-gradient(110deg,#09203c,#17496b);color:#fff}.hero-mobile .mobile-brand{font-size:11px;letter-spacing:.12em;color:#e2eaf4;font-weight:800}.hero-mobile h1{margin:7px 0 0;font-size:30px;letter-spacing:.08em;color:#fff}.hero-mobile strong{font-size:18px;letter-spacing:.07em;color:#e8bd74}.hero-mobile small{font-size:9px;letter-spacing:.07em;color:#b4cadf}.app-layout{min-height:0}}
+@media(max-width:420px){.cards.stat4{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi{padding:12px}.kpi strong{font-size:19px}}
+
+/* V5.2 — Identité visuelle : vrai logo fourni et photographie paysagère */
+.hero.hero-v52{display:flex!important;align-items:center!important;justify-content:flex-start!important;min-height:172px!important;height:auto!important;padding:20px 32px!important;line-height:normal!important;background:linear-gradient(90deg,#071d36 0%,#0a2542 36%,rgba(10,37,66,.92) 52%,rgba(10,37,66,.46) 78%,rgba(10,37,66,.06) 100%),url("paysage-vosges.webp") right center / auto 100% no-repeat,#102c4b!important;overflow:hidden}
+.hero.hero-v52:after{display:none!important}
+.hero-identity{display:flex;align-items:center;gap:26px;max-width:100%;position:relative;z-index:2}
+.logo-frame{width:126px;height:108px;flex:0 0 126px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;padding:7px;box-shadow:0 5px 20px #0004}
+.logo-frame img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-heading{min-width:0}.hero-title-main{font-size:clamp(29px,3.6vw,54px);font-weight:850;letter-spacing:.08em;color:#fff;line-height:1.05}
+.hero-title-sub{font-size:clamp(18px,2.4vw,30px);font-weight:750;letter-spacing:.09em;color:#f0c77f;margin-top:6px}
+.hero-motto{font-size:clamp(9px,1.1vw,13px);letter-spacing:.15em;color:#d3dfec;margin-top:12px}
+.hero-motto span{margin:0 8px;color:#e3b868}
+@media(max-width:760px){
+ .hero.hero-v52{min-height:135px!important;padding:15px!important;background:linear-gradient(90deg,#071d36 0%,rgba(7,29,54,.94) 65%,rgba(7,29,54,.45)),url("paysage-vosges.webp") right center / auto 100% no-repeat,#102c4b!important}
+ .hero-identity{gap:12px}.logo-frame{width:80px;height:80px;flex-basis:80px;padding:4px;border-radius:8px}
+ .hero-title-main{font-size:clamp(20px,5vw,29px)}.hero-title-sub{font-size:clamp(12px,3.2vw,19px)}.hero-motto{font-size:8px;letter-spacing:.03em;margin-top:7px}.hero-motto span{margin:0 2px}
+}
 </style></head><body>
-<header class="hero">
- <div class="brand"><div class="brand-symbol" aria-hidden="true">◢<span>◆</span></div><div><strong>Gendarmerie</strong><small>nationale</small></div></div>
- <div class="hero-title"><div class="hero-cup" aria-hidden="true">☕</div><div><h1>CAISSE CAFÉ</h1><p>DE LA BTM AYDOILLES</p><small>CONVIVIALITÉ&nbsp; • &nbsp;PARTAGE&nbsp; • &nbsp;ESPRIT D’ÉQUIPE</small></div></div>
- <div class="hero-date" id="heroDate">☷ Gestion de caisse</div>
+<header class="hero hero-v52" role="banner">
+  <div class="hero-identity">
+    <div class="logo-frame"><img src="logo-gendarmerie.png" alt="Logo Gendarmerie nationale fourni par l’unité"></div>
+    <div class="hero-heading">
+      <div class="hero-title-main">CAISSE CAFÉ</div>
+      <div class="hero-title-sub">DE LA BTM AYDOILLES</div>
+      <div class="hero-motto">CONVIVIALITÉ <span>•</span> PARTAGE <span>•</span> ESPRIT D’ÉQUIPE</div>
+    </div>
+  </div>
 </header>
-<div class="app-layout"><aside class="sidebar"><div class="sidebar-label">NAVIGATION</div><nav><button data-tab="dashboard" class="active">Tableau de bord</button><button data-tab="people">Collègues</button><button data-tab="monthly">Cotisations mensuelles</button><button data-tab="stock">Stocks</button><button data-tab="reports">Clôture & bilans</button><button data-tab="history">Historique</button><button data-tab="settings">Sauvegardes</button></nav><div class="sidebar-foot"><div class="flag"></div><strong>BTM AYDOILLES</strong><small>CAISSE CAFÉ • VERSION 5</small></div></aside><main class="content">
+<div class="app-layout"><aside class="sidebar"><div class="sidebar-label">NAVIGATION</div><nav><button data-tab="dashboard" class="active">Tableau de bord</button><button data-tab="people">Collègues</button><button data-tab="monthly">Cotisations mensuelles</button><button data-tab="stock">Stocks</button><button data-tab="reports">Clôture & bilans</button><button data-tab="history">Historique</button><button data-tab="settings">Sauvegardes</button></nav><div class="sidebar-foot"><div class="flag"></div><strong>BTM AYDOILLES</strong><small>CAISSE CAFÉ • VERSION 5.1</small></div></aside><main class="content">
 <section id="dashboard">
  <div class="dash-heading"><div><span class="eyebrow">VUE D’ENSEMBLE</span><h2>Tableau de bord</h2><p class="muted">Les comptes de la caisse, en un coup d’œil.</p></div><div class="dash-date" id="dashboardMonth"></div></div>
  <div class="cards stat4">
