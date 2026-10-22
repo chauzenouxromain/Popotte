@@ -1,23 +1,3 @@
-CAISSE CAFÉ DE LA BTM AYDOILLES — V5.2
+V5.3 — Correction de la bannière : paysage sans texte ni bouton intégrés, suppression de la date décorative du tableau de bord. Les données et la logique comptable sont inchangées.
 
-Cette version corrige uniquement l'identité visuelle de la V5.1 :
-- Logo fourni par l'utilisateur, sans redessin (recadrage des marges transparentes).
-- Véritable image de paysage forestier dans l'en-tête.
-- Titre et sous-titre en texte net et responsive.
-- Aucun écusson d'unité en haut à droite.
-- Gestion de caisse inchangée.
-
-INSTALLATION
-1. Dans l'application actuelle, exporter une sauvegarde JSON.
-2. Décompresser le ZIP.
-3. Envoyer ces TROIS fichiers à la racine du dépôt GitHub Pages :
-   index.html
-   logo-gendarmerie.png
-   paysage-vosges.webp
-4. Attendre le déploiement et recharger la page (Ctrl+Maj+R).
-5. Vérifier l'affichage et les opérations avec des données fictives.
-
-IMPORTANT
-- Ne pas publier de sauvegarde JSON contenant les noms et comptes des collègues sur GitHub.
-- Les données restent dans le stockage local du navigateur.
-- Cette version ne corrige pas les éventuels problèmes de calcul antérieurs.
+Avant la mise à jour : sauvegarde JSON. Remplacer index.html et paysage-vosges.webp à la racine de GitHub. logo-gendarmerie.png est inchangé. Forcer l’actualisation de la page après déploiement.

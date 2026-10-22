@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Caisse café de la BTM Aydoilles — V5.2</title><style>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Caisse café de la BTM Aydoilles — V5.3</title><style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#182332;background:#f4f6fa}*{box-sizing:border-box}body{margin:0}header{background:#152238;color:white;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px}header strong{font-size:24px;letter-spacing:.06em}header small{display:block;color:#b7c7dc}main{max-width:1050px;margin:auto;padding:18px}nav{display:flex;gap:8px;overflow:auto;margin-bottom:18px}button,.btn{border:0;background:#dfe7f1;color:#152238;border-radius:10px;padding:11px 15px;font-weight:650;cursor:pointer;font:inherit}button:hover{filter:brightness(.96)}button.active,.primary{background:#245c9e;color:white}.danger{background:#fee5e5;color:#a32222}.ghost{background:transparent;color:inherit;border:1px solid #d7e0ea}section[hidden]{display:none!important}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card,.panel{background:white;border-radius:15px;padding:20px;box-shadow:0 2px 10px #162c4a0a}.card span{color:#68788b;font-size:13px}.card strong{display:block;font-size:27px;margin-top:8px}.green{color:#16704b}.red{color:#b34242}.panel{margin-top:16px}h2{margin:0 0 15px;font-size:20px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between}.actions{display:flex;gap:8px;flex-wrap:wrap}.muted{color:#718094;font-size:13px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;border-bottom:1px solid #e8edf3;padding:11px 8px;white-space:nowrap}th{color:#697b90;font-size:12px;text-transform:uppercase}td:last-child{text-align:right}th:last-child{text-align:right}.empty{padding:25px;text-align:center;color:#78899a}dialog{border:0;border-radius:16px;box-shadow:0 20px 70px #17243a44;width:min(460px,calc(100% - 24px));padding:22px}dialog::backdrop{background:#101b2c99}form{display:grid;gap:12px}label{display:grid;gap:5px;font-size:13px;font-weight:650}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd6e2;border-radius:9px;font:inherit;background:white}textarea{min-height:75px}form .actions{justify-content:flex-end}#message{position:fixed;bottom:15px;right:15px;background:#1a2c42;color:white;padding:12px 17px;border-radius:10px;display:none;max-width:90vw}#message.show{display:block}.note{background:#e8f0fb;border-radius:10px;padding:12px;color:#36506f;font-size:13px;margin-top:15px}@media(max-width:650px){header{padding:14px}main{padding:12px}.cards{grid-template-columns:1fr}.card{padding:14px}.card strong{font-size:23px}button{padding:10px 12px}.panel{padding:14px}th,td{font-size:13px}}
 
 .stat4{grid-template-columns:repeat(4,1fr)}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.notice-warn{background:#fff3d9;color:#805317;padding:12px;border-radius:10px}.notice-good{background:#e4f5eb;color:#16603c;padding:12px;border-radius:10px}.stock-negative{color:#b34242;font-weight:700}.print-only{display:none}.table-wrap td{vertical-align:middle}.table-wrap button{padding:7px 9px}.flex-field{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.flex-field label{min-width:180px;flex:1}.metric{font-weight:750;font-size:20px}.locked{color:#895500;background:#fff2ce;padding:8px;border-radius:8px}
@@ -47,7 +47,7 @@ button.primary,.primary{background:#1265c2;color:white}button:hover{filter:brigh
 @media(max-width:420px){.cards.stat4{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi{padding:12px}.kpi strong{font-size:19px}}
 
 /* V5.2 — Identité visuelle : vrai logo fourni et photographie paysagère */
-.hero.hero-v52{display:flex!important;align-items:center!important;justify-content:flex-start!important;min-height:172px!important;height:auto!important;padding:20px 32px!important;line-height:normal!important;background:linear-gradient(90deg,#071d36 0%,#0a2542 36%,rgba(10,37,66,.92) 52%,rgba(10,37,66,.46) 78%,rgba(10,37,66,.06) 100%),url("paysage-vosges.webp") right center / auto 100% no-repeat,#102c4b!important;overflow:hidden}
+.hero.hero-v52{display:flex!important;align-items:center!important;justify-content:flex-start!important;min-height:172px!important;height:auto!important;padding:20px 32px!important;line-height:normal!important;background:linear-gradient(90deg,#071d36 0%,#0a2542 36%,rgba(10,37,66,.92) 52%,rgba(10,37,66,.46) 78%,rgba(10,37,66,.06) 100%),url("paysage-vosges.webp") right center / cover no-repeat,#102c4b!important;overflow:hidden}
 .hero.hero-v52:after{display:none!important}
 .hero-identity{display:flex;align-items:center;gap:26px;max-width:100%;position:relative;z-index:2}
 .logo-frame{width:126px;height:108px;flex:0 0 126px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;padding:7px;box-shadow:0 5px 20px #0004}
@@ -57,7 +57,7 @@ button.primary,.primary{background:#1265c2;color:white}button:hover{filter:brigh
 .hero-motto{font-size:clamp(9px,1.1vw,13px);letter-spacing:.15em;color:#d3dfec;margin-top:12px}
 .hero-motto span{margin:0 8px;color:#e3b868}
 @media(max-width:760px){
- .hero.hero-v52{min-height:135px!important;padding:15px!important;background:linear-gradient(90deg,#071d36 0%,rgba(7,29,54,.94) 65%,rgba(7,29,54,.45)),url("paysage-vosges.webp") right center / auto 100% no-repeat,#102c4b!important}
+ .hero.hero-v52{min-height:135px!important;padding:15px!important;background:linear-gradient(90deg,#071d36 0%,rgba(7,29,54,.94) 65%,rgba(7,29,54,.45)),url("paysage-vosges.webp") right center / cover no-repeat,#102c4b!important}
  .hero-identity{gap:12px}.logo-frame{width:80px;height:80px;flex-basis:80px;padding:4px;border-radius:8px}
  .hero-title-main{font-size:clamp(20px,5vw,29px)}.hero-title-sub{font-size:clamp(12px,3.2vw,19px)}.hero-motto{font-size:8px;letter-spacing:.03em;margin-top:7px}.hero-motto span{margin:0 2px}
 }
@@ -74,7 +74,7 @@ button.primary,.primary{background:#1265c2;color:white}button:hover{filter:brigh
 </header>
 <div class="app-layout"><aside class="sidebar"><div class="sidebar-label">NAVIGATION</div><nav><button data-tab="dashboard" class="active">Tableau de bord</button><button data-tab="people">Collègues</button><button data-tab="monthly">Cotisations mensuelles</button><button data-tab="stock">Stocks</button><button data-tab="reports">Clôture & bilans</button><button data-tab="history">Historique</button><button data-tab="settings">Sauvegardes</button></nav><div class="sidebar-foot"><div class="flag"></div><strong>BTM AYDOILLES</strong><small>CAISSE CAFÉ • VERSION 5.1</small></div></aside><main class="content">
 <section id="dashboard">
- <div class="dash-heading"><div><span class="eyebrow">VUE D’ENSEMBLE</span><h2>Tableau de bord</h2><p class="muted">Les comptes de la caisse, en un coup d’œil.</p></div><div class="dash-date" id="dashboardMonth"></div></div>
+ <div class="dash-heading"><div><span class="eyebrow">VUE D’ENSEMBLE</span><h2>Tableau de bord</h2><p class="muted">Les comptes de la caisse, en un coup d’œil.</p></div></div>
  <div class="cards stat4">
   <div class="card kpi"><div class="kpi-icon">◉</div><span>SOLDE DE CAISSE</span><small>Entrées − sorties</small><strong id="balance" class="green">0,00 €</strong></div>
   <div class="card kpi"><div class="kpi-icon">♙</div><span>SOMMES À RECEVOIR</span><small>Dettes nettes des collègues</small><strong id="dashReceivables" class="red">0,00 €</strong></div>
@@ -213,7 +213,7 @@ $('printMonthly').onclick=()=>window.print();
 function renderDashboardV5(){
  const month=today().slice(0,7);
  const label=new Intl.DateTimeFormat('fr-FR',{month:'long',year:'numeric'}).format(new Date(month+'-01T12:00:00'));
- $('dashboardMonth').textContent=label.charAt(0).toUpperCase()+label.slice(1);
+
  const rows=monthlySummary(month);
  const outstanding=rows.reduce((a,r)=>a+r.diff,0);
  $('dashReceivables').textContent=money(Math.max(0,outstanding));
